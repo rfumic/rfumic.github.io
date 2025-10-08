@@ -1,20 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roko Fumić | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin src="/assets/index-cdbe19bd.js"></script>
-    <link rel="stylesheet" href="/assets/index-987282a9.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Roko Fumić | Portfolio</title>
+        <style>
+            :root {
+                --bg-color: #2d2d34;
+                --white-text-color: #f1e4e8;
+                --red-text-color: #b97375;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Verdana, Arial, sans-serif;
+                background-color: var(--bg-color);
+                color: var(--white-text-color);
+                text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+                transition: 0.15s ease-in-out;
+            }
+
+            main, header {
+                margin: 1em;
+            }
+
+            hr {
+                width: 100%;
+                margin: 1vh 0;
+            }
+
+            .link {
+                color: var(--red-text-color);
+                text-decoration: none;
+                font-weight: 800;
+                padding-right: 10px;
+            }
+
+            .link:hover {
+                opacity: 50%;
+            }
+
+            .link_group {
+                font-weight: bold;
+                display: flex;
+                gap: 8pt;
+            }
+            
+            section {
+                margin-top: 18px;
+            }
+
+            section > p {
+                opacity: 50%;
+            }
+
+            .lightbox {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.8);
+                justify-content: center;
+                align-items: center;
+            }
+
+            .lightbox:target {
+                display: flex;
+            }
+
+            .lightbox img {
+                max-width: 90%;
+                max-height: 90%;
+                border-radius: 6px;
+            }
+
+            .info-line {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 1em;
+                row-gap: 0.5em;
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>roko fumić</h1>
+
+            <p class="info-line">
+                <span>junior software engineer</span>
+                <span>gračac, croatia</span>
+                <span>looking for opportunities to work and learn</span>
+            </p>
+
+            <div class="link_group">
+                <a class="link" href="https://www.linkedin.com/in/rokofumic">linkedin</a>
+                <a class="link" href="https://github.com/rfumic">github</a>
+                <a class="link" href="mailto:rokofumic@gmail.com">email</a>
+            </div>
+
+            <hr>
+        </header>
+
+        <main>
+            <h2>some of my projects</h2>
+
+            <article>
+                <section>
+                    <h3>mongodb query language</h3>
+                    <p>an npm package that translates a custom language into mongodb queries</p>
+                    <div class="link_group">
+                        <a class="link" href="https://github.com/rfumic/mongodb-query-language">view code</a>
+                        <a class="link" href="https://repozitorij.unipu.hr/islandora/object/unipu:10571">view thesis</a>
+                        <a class="link" href="https://www.npmjs.com/package/@rfumic/mongodb-query-language">view package</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>sudoku race</h3>
+                    <p>full stack online sudoku made with vue.js and express</p>
+                    <div class="link_group">
+                        <a class="link" href="https://github.com/rfumic/sudoku-race-frontend">view code</a>
+                        <a class="link" href="https://youtu.be/bB0h2Pw1exY">view demo</a>
+                        <a class="link" href="#sudoku_race_img" class="btn">view screenshot</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>studiu</h3>
+                    <p>a forum for students built with vue.js and firebase</p>
+                    <div class="link_group">
+                        <a class="link" href="https://github.com/rfumic/studiu">view code</a>
+                        <a class="link" href="https://youtu.be/lMiVYMd-HxQ">view demo</a>
+                        <a class="link" href="#studiu_img" class="btn">view screenshot</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>remismd</h3>
+                    <p>a markdown editor built with vue.js and electron</p>
+                    <div class="link_group">
+                        <a class="link" href="https://github.com/rfumic/RemisMD">view code</a>
+                        <a class="link" href="https://github.com/rfumic/RemisMD/releases">view app</a>
+                        <a class="link" href="#remis_img" class="btn">view screenshot</a>
+                    </div>
+                </section>
+            </article>
+
+        </main>
+
+        <!-- NOTE: images for lightbox preview -->
+        <a href="#" class="lightbox" id="sudoku_race_img">
+            <img loading="lazy" src="./assets/sudoku-race.jpg">
+        </a>
+        <a href="#" class="lightbox" id="remis_img">
+            <img loading="lazy" src="./assets/remis.jpg">
+        </a>
+        <a href="#" class="lightbox" id="studiu_img">
+            <img loading="lazy" src="./assets/studiu.png">
+        </a>
+    </body>
 </html>
