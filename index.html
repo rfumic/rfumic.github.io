@@ -31,9 +31,18 @@
                 margin: 1em;
             }
 
+            main h2 {
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
             hr {
                 width: 100%;
                 margin: 1vh 0;
+            }
+
+            article {
+                margin-left: 25px;
             }
 
             .link {
@@ -51,6 +60,7 @@
                 font-weight: bold;
                 display: flex;
                 gap: 12px;
+                margin-top: 4px;
             }
             
             section {
@@ -94,6 +104,20 @@
                 row-gap: 0.5em;
                 margin: 10px 0;
             }
+
+            .stack {
+                display: flex;
+                gap: 8px;
+                margin: 8px 0 14px 0;
+            }
+
+            .stack span {
+                padding: 3px 8px;
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, 0.08);
+                font-size: 0.78rem;
+            }
+
         </style>
     </head>
     <body>
@@ -124,6 +148,13 @@
                 <section>
                     <h3>mongodb query language</h3>
                     <p>an npm package that translates a custom language into mongodb queries</p>
+
+                    <div class="stack">
+                        <span>TypeScript</span>
+                        <span>MongoDB</span>
+                        <span>Jest</span>
+                    </div>
+
                     <div class="link_group">
                         <a class="link" href="https://github.com/rfumic/mongodb-query-language">code</a>
                         <a class="link" href="https://repozitorij.unipu.hr/islandora/object/unipu:10571">read thesis</a>
@@ -133,41 +164,66 @@
 
                 <section>
                     <h3>boomislav</h3>
-                    <p>flappy bird built from scratch with C and SDL3</p>
+                    <p>flappy bird built from scratch with c</p>
+
+                    <div class="stack">
+                        <span>C</span>
+                        <span>SDL3</span>
+                    </div>
+
                     <div class="link_group">
+                        <a class="link" href="https://rfumic.github.io/flappy-bird-clone/">&#9658; play</a>
                         <a class="link" href="https://github.com/rfumic/flappy-bird-clone">code</a>
                         <a class="link" href="#flappy_bird_img" class="btn">screenshot</a>
-                        <a class="link" href="https://rfumic.github.io/flappy-bird-clone/">⏵ demo</a>
                     </div>
                 </section>
 
                 <section>
                     <h3>sudoku race</h3>
                     <p>full stack online sudoku made with vue.js and express</p>
+
+                    <div class="stack">
+                        <span>Vue.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+
                     <div class="link_group">
+                        <a class="link" href="https://youtu.be/bB0h2Pw1exY">&#9658; demo</a>
                         <a class="link" href="https://github.com/rfumic/sudoku-race-frontend">code</a>
                         <a class="link" href="#sudoku_race_img" class="btn">screenshot</a>
-                        <a class="link" href="https://youtu.be/bB0h2Pw1exY">⏵ demo</a>
                     </div>
                 </section>
 
                 <section>
                     <h3>studiu</h3>
                     <p>a forum for students built with vue.js and firebase</p>
+
+                    <div class="stack">
+                        <span>Vue.js</span>
+                        <span>JavaScript</span>
+                    </div>
+
                     <div class="link_group">
+                        <a class="link" href="https://youtu.be/lMiVYMd-HxQ">&#9658; demo</a>
                         <a class="link" href="https://github.com/rfumic/studiu">code</a>
                         <a class="link" href="#studiu_img" class="btn">screenshot</a>
-                        <a class="link" href="https://youtu.be/lMiVYMd-HxQ">⏵ demo</a>
                     </div>
                 </section>
 
                 <section>
                     <h3>remismd</h3>
                     <p>a markdown editor built with vue.js and electron</p>
+
+                    <div class="stack">
+                        <span>Vue.js</span>
+                        <span>Electron</span>
+                    </div>
+
                     <div class="link_group">
                         <a class="link" href="https://github.com/rfumic/RemisMD">code</a>
-                        <a class="link" href="#remis_img" class="btn">screenshot</a>
                         <a class="link" href="https://github.com/rfumic/RemisMD/releases">download</a>
+                        <a class="link" href="#remis_img" class="btn">screenshot</a>
                     </div>
                 </section>
             </article>
