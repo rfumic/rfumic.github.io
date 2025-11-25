@@ -21,6 +21,12 @@
                 transition: 0.15s ease-in-out;
             }
 
+            .container {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 1em;
+            }
+
             main, header {
                 margin: 1em;
             }
@@ -44,15 +50,22 @@
             .link_group {
                 font-weight: bold;
                 display: flex;
-                gap: 8pt;
+                gap: 12px;
             }
             
             section {
                 margin-top: 18px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            section h3 {
+                margin-bottom: 4px;
             }
 
             section > p {
                 opacity: 50%;
+                margin-bottom: 6px;
             }
 
             .lightbox {
@@ -84,6 +97,8 @@
         </style>
     </head>
     <body>
+        <div class="container">
+
         <header>
             <h1>roko fumić</h1>
 
@@ -110,9 +125,19 @@
                     <h3>mongodb query language</h3>
                     <p>an npm package that translates a custom language into mongodb queries</p>
                     <div class="link_group">
-                        <a class="link" href="https://github.com/rfumic/mongodb-query-language">view code</a>
-                        <a class="link" href="https://repozitorij.unipu.hr/islandora/object/unipu:10571">view thesis</a>
-                        <a class="link" href="https://www.npmjs.com/package/@rfumic/mongodb-query-language">view package</a>
+                        <a class="link" href="https://github.com/rfumic/mongodb-query-language">code</a>
+                        <a class="link" href="https://repozitorij.unipu.hr/islandora/object/unipu:10571">read thesis</a>
+                        <a class="link" href="https://www.npmjs.com/package/@rfumic/mongodb-query-language">npm package</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>boomislav</h3>
+                    <p>flappy bird built from scratch with C and SDL3</p>
+                    <div class="link_group">
+                        <a class="link" href="https://github.com/rfumic/flappy-bird-clone">code</a>
+                        <a class="link" href="#flappy_bird_img" class="btn">screenshot</a>
+                        <a class="link" href="https://rfumic.github.io/flappy-bird-clone/">⏵ demo</a>
                     </div>
                 </section>
 
@@ -120,9 +145,9 @@
                     <h3>sudoku race</h3>
                     <p>full stack online sudoku made with vue.js and express</p>
                     <div class="link_group">
-                        <a class="link" href="https://github.com/rfumic/sudoku-race-frontend">view code</a>
-                        <a class="link" href="https://youtu.be/bB0h2Pw1exY">view demo</a>
-                        <a class="link" href="#sudoku_race_img" class="btn">view screenshot</a>
+                        <a class="link" href="https://github.com/rfumic/sudoku-race-frontend">code</a>
+                        <a class="link" href="#sudoku_race_img" class="btn">screenshot</a>
+                        <a class="link" href="https://youtu.be/bB0h2Pw1exY">⏵ demo</a>
                     </div>
                 </section>
 
@@ -130,9 +155,9 @@
                     <h3>studiu</h3>
                     <p>a forum for students built with vue.js and firebase</p>
                     <div class="link_group">
-                        <a class="link" href="https://github.com/rfumic/studiu">view code</a>
-                        <a class="link" href="https://youtu.be/lMiVYMd-HxQ">view demo</a>
-                        <a class="link" href="#studiu_img" class="btn">view screenshot</a>
+                        <a class="link" href="https://github.com/rfumic/studiu">code</a>
+                        <a class="link" href="#studiu_img" class="btn">screenshot</a>
+                        <a class="link" href="https://youtu.be/lMiVYMd-HxQ">⏵ demo</a>
                     </div>
                 </section>
 
@@ -140,9 +165,9 @@
                     <h3>remismd</h3>
                     <p>a markdown editor built with vue.js and electron</p>
                     <div class="link_group">
-                        <a class="link" href="https://github.com/rfumic/RemisMD">view code</a>
-                        <a class="link" href="https://github.com/rfumic/RemisMD/releases">view app</a>
-                        <a class="link" href="#remis_img" class="btn">view screenshot</a>
+                        <a class="link" href="https://github.com/rfumic/RemisMD">code</a>
+                        <a class="link" href="#remis_img" class="btn">screenshot</a>
+                        <a class="link" href="https://github.com/rfumic/RemisMD/releases">download</a>
                     </div>
                 </section>
             </article>
@@ -159,5 +184,10 @@
         <a href="#" class="lightbox" id="studiu_img">
             <img loading="lazy" src="./assets/studiu.png">
         </a>
+        <a href="#" class="lightbox" id="flappy_bird_img">
+            <img loading="lazy" src="./assets/flappy-bird-clone.png">
+        </a>
+
+        </div> <!-- .container -->
     </body>
 </html>
